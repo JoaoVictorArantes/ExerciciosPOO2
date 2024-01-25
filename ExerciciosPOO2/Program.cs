@@ -4,7 +4,7 @@
     {
         static void Main(string[] args)
         {
-            
+
             Funcionario funcionario1 = new Funcionario();
             Funcionario funcionario2 = new Funcionario();
 
@@ -22,7 +22,7 @@
             Console.Write("Salario: ");
             funcionario2.Salario = Convert.ToDouble(Console.ReadLine());
 
-            Console.WriteLine($"O salário médio é: { Funcionario.MediaSalario(funcionario1.Salario, funcionario2.Salario)}");
+            Console.WriteLine($"O salário médio é: {Funcionario.MediaSalario(funcionario1.Salario, funcionario2.Salario).ToString("F2")}");
 
             Console.ReadKey();
         }
